@@ -97,7 +97,7 @@ class Snake(GameObject):
         self.positions = [(center_x, center_y)]
         self.length = 1
         self.last = None
-    
+
     def update_direction(self):
         """Обновляет направление движения змейки."""
         if self.next_direction:
@@ -122,7 +122,7 @@ class Snake(GameObject):
             self.last = self.positions.pop()
         else:
             self.last = None
-    
+
     def draw(self, surface):
         """Отрисовывает змейку на игровой поверхности."""
         for position in self.positions[:-1]:
